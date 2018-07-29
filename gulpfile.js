@@ -15,16 +15,16 @@ let runSequence = require("run-sequence");
 let paths = {
 	css: {
 		source: ["src/less/*.less"],
-		target: "src/css"
+		target: "css"
 	},
 	pug: {
 		source: ["src/*.pug"],
 		watch: ["src/**/*.pug"],
-		target: "docs"
+		target: ""
 	},
 	images: {
 		source: "src/img/**/*",
-		target: "docs/img"
+		target: "img"
 	}
 };
 
@@ -54,7 +54,7 @@ let errorHandlers = {
 gulp.task("browser-sync", function() {
 	browserSync.init({
 		server: {
-			baseDir: "./docs"
+			baseDir: "./"
 		}
 	});
 });
