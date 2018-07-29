@@ -15,7 +15,7 @@ let runSequence = require("run-sequence");
 let paths = {
 	css: {
 		source: ["src/less/*.less"],
-		target: "css"
+		target: "src/css"
 	},
 	pug: {
 		source: ["src/*.pug"],
