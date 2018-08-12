@@ -3,7 +3,8 @@
 mixin lesson(name, link, nextLink)
 	h1= name
 	.video
-		iframe(src=link)
+		.youtube(data-embed=link)
+			.play-button
 	if nextLink
 		.next
 			a(href=nextLink) Pokračovat na další lekci
